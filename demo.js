@@ -119,10 +119,11 @@ function displayArtistInfo(artist) {
   artistInfoDiv.innerHTML = `
         <h3>${artist.name}</h3>
         <p>Genres: ${artist.genres.join(", ")}</p>
+        <P>Popularity: ${artist.popularity}</p>
         <p>Followers: ${artist.followers.total}</p>
         <img src="${artist.images[0] ? artist.images[0].url : ""}" alt="${
     artist.name
-  }" height="300" width="300">
+  }" height="640" width="640">
         <p><a href="${
           artist.external_urls.spotify
         }" target="_blank">Open in Spotify</a></p>
